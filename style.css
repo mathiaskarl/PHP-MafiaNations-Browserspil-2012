@@ -1,0 +1,1655 @@
+html, body {
+	height:100%; 
+	margin:0; 
+	padding:0;
+}
+
+img, table {
+	border: none;
+}
+
+textarea {
+	resize: none;
+}
+
+@font-face {
+    font-family: caviardreams;
+    src: url('CaviarDreams.eot');
+    src: local(caviardreams), url('CaviarDreams.ttf') format('opentype');
+}
+
+a {
+	color:#a22121;
+}
+
+a:hover {
+	color: #4c4343;
+}
+	
+
+#background {
+	width:100%;
+	height: auto;
+	z-index:1;
+	}
+	#page-background {
+	position:fixed; 
+	top:0; 
+	left:0; 
+	width:100%; 
+	height:100%;
+	z-index:-1;
+	}
+	#header {
+		position:absolute;
+		width: 100%;
+		height:193px;
+		background-image: url('images/header.png');
+		background-repeat: repeat-x;
+		background-position: center top;
+		z-index:3;
+		}
+		#headercontainer {
+			width: 830px;
+			margin: 0px auto;
+			}
+			.logo {
+			width: 325px;
+			height: 113px;
+			background: url(images/logo.png) 0 0 no-repeat;
+			float:left;
+			}
+
+#headerbox {
+	width: 323px;
+	height: 147px;
+	padding-right: 1px;
+	margin-top:10px;
+	background: url(images/class.png) 0 0 no-repeat;
+	float:right;
+	}
+	#glass {
+		width: 309px;
+		height: 134px;
+		margin-left:7px;
+		margin-top:7px;
+		background: url(images/class2.png) 0 0 no-repeat;
+		}
+		#usercontent {
+		width:100%;
+		padding:3px;
+		height:130px;
+		font-family: Tahoma, arial, serif;
+		font-size: 11px;
+		color: #231917;
+		}
+		#usercontent a {
+		text-decoration: none;
+		font-family: tahoma, arial, serif;
+		font-size: 11px;
+		color: #231917;
+		font-weight:bold;
+			
+		}
+		#usercontent a:hover {
+			text-decoration: underline;
+			font-family: tahoma, arial, serif;
+			font-size: 11px;
+			color: #231917;
+			font-weight:bold;
+			
+			}
+			#usercontenttop {
+				float:left;
+				margin-left:5px;
+				margin-top:4px;
+				height:50px;
+				width:234px;
+				}
+				.frontboxleft {
+				float:left;
+				width:49%;
+				margin-bottom:5px;
+				font-weight:bold;
+				}
+				.frontboxright {
+				float:right;
+				width:49%;
+				text-align:right;
+				margin-bottom:5px;
+				}
+				#frontavatar {
+				margin-left:7px;
+				margin-top:6px;
+				float:left;
+				height:50px;
+				width:50px;
+				}
+				.frontboxone {
+				float:left;
+				width:80px;
+				padding-left:6px;
+				}
+				.frontboxtwo {
+				float:left;
+				width:130px;
+				}
+				.frontboxthree {
+				float:right;
+				text-align:right;
+				padding-right:2px;
+				font-weight:bold;
+				font-size:10px;
+				}
+
+#headerbox2 {
+	width: 271px;
+	height: 147px;
+	padding-right: 1px;
+	margin-top:10px;
+	background: url(images/glass.png) 0 0 no-repeat;
+	float:right;
+}
+#headerbox2 #input {
+	background-image:url(images/inputbg.png) 0 0 no-repeat;
+	width: 203px;
+	height: 16px;
+	color:#989a9a;
+	padding:1px;
+	font-family: tahoma, arial, sans-serif;
+	letter-spacing:0.05em;
+	font-size: 13px;
+	}
+	#glass2 {
+		width: 257px;
+		height: 134px;
+		margin-left:7px;
+		margin-top:7px;
+		background: url(images/glass2.png) 0 0 no-repeat;
+		}
+		#loginbox {
+		padding: 7px 7px 0px 7px;
+		}
+		#loginfooter {
+		width: 237px;
+		height: 38px;
+		margin-left: 9px;
+		margin-top:4px;
+		padding-top:12px;
+		background: url(images/loginfooter.png) 0 0 no-repeat;
+		font-family: tahoma, arial, sans-serif;
+		font-size: 11px;
+		letter-spacing:0.02em;
+		color: #1f1a18;
+		}
+		#loginfooter a {
+		color: #1f1a18;
+		text-decoration:none;
+		}
+
+		#loginfooter a:hover {
+		color: #1f1a18;
+		text-decoration:underline;
+		}
+                
+.loading_overlay {
+    z-index:31;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: url(images/overlay_transparent.png) repeat;
+    }
+    .loading_overlay_center {
+        z-index:32;
+        position: fixed;
+        width:100%;
+        height: 100%;
+    }
+    .loading_overlay_box {
+        width:200px;
+        height:170px;
+        margin-left:300px;
+        margin-top:100px;
+        padding-top:40px;
+        background: url(images/overlay_box.png) repeat;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        text-align:center;
+        }
+        .event_fightclub {
+            width:250px;
+            text-align:center;
+            margin-left:auto;
+            margin-right:auto;
+            padding:10px;
+            display:none;
+            font-family:Georgia, arial, serif;
+            font-size:15px;
+            color:#ebebeb;
+            background: url(images/overlay_box.png) repeat;
+            font-style:italic;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;  
+        }
+
+.choosemafia {
+	z-index:31;
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background: url(images/choosebg.png) repeat;
+	}
+	#choosecenter {
+		z-index:32;
+		position: fixed;
+		width:100%;
+		height: 100%;
+		margin: 0px auto;
+		padding-top:50px;
+		}
+		#choosecontainer {
+			width:860px;
+			height:564px;
+			margin:0px auto;
+			background: url(images/choosepage.png) 0 0 no-repeat;
+			}
+			.choosemafiabg {
+				float:right;
+				width: 510px;
+				height:232px;
+				margin: 40px 40px 0px 0px;
+				background: url(images/mafiapicturebg.png) 0 0 no-repeat;
+				}
+				.mafiabg1 {
+					width:153px;
+					height:207px;
+					margin-right:9px;
+					margin-left:16px;
+					margin-top:11px;
+					float:left;
+				}
+				.mafiabg2 {
+					width:153px;
+					height:207px;
+					margin-right:9px;
+					margin-top:11px;
+					float:left;
+				}
+				.mafiabg3 {
+					width:153px;
+					height:207px;
+					margin-top:11px;
+					float:left;
+				}
+				#italian{
+				width:153px;
+				height:207px;
+				margin-left:1px;
+				background: url(images/click.png) bottom left no-repeat;
+				}
+				#italian:hover {
+					background-position: top center;
+				}
+				#russian{
+				width:153px;
+				height:207px;
+				margin-left:3px;
+				background: url(images/click.png) bottom left no-repeat;
+				}
+				#russian:hover {
+					background-position: top center;
+				}
+				#chinese{
+				width:153px;
+				height:207px;
+				margin-left:5px;
+				background: url(images/click.png) bottom left no-repeat;
+				}
+				#chinese:hover {
+					background-position: top center;
+				}
+				#picknation{
+				width:195px;
+				height:33px;
+				margin-left:1px;
+				background: url(images/picknation.png) bottom left no-repeat;
+				}
+				#picknation:hover {
+					background-position: top center;
+				}
+
+#container {
+	width: 1186px;
+	margin: 0px auto;
+	z-index:2;
+	}
+	#repeatcontainer {
+		float:left;
+		width:884px;
+		height: auto;
+		z-index:2;
+		}
+		#repeat {
+			width: 884px;
+			height: auto;
+			min-height:700px;
+			background: url(images/repeat.png) repeat-y;
+			z-index:2;
+			}
+			#pagecontent {
+				width:828px;
+				padding-top:2px;
+				margin: 0px auto;
+				height: auto;
+				font-family: tahoma, arial, serif;
+				font-size: 13px;
+				color: #141617;
+				z-index:10;
+				}
+#bottom {
+	width: 884px;
+	height: 19px;
+	z-index:2;
+	background: url(images/repeatbottom.png) 0 0 no-repeat;
+	}
+
+#backtotop {
+	margin: 0px auto;
+	width:137px;
+	height: 25px;
+	z-index: 2;
+	padding-top:19px;
+}
+.backtotopbutton{
+	margin: 0px auto;
+	width:137px;
+	height:25px;
+	background: url(images/back.png) bottom left no-repeat;
+	}
+	.backtotopbutton:hover {
+		background-position: top center;
+	}
+
+
+	#footer {
+		margin: 0px auto;
+		width:884px;
+		z-index:2;
+		}
+		#top {
+		width: 884px;
+		height: 19px;
+		z-index:2;
+		background: url(images/repeattop.png) 0 0 no-repeat;
+		}
+		#repeatfooter {
+		width: 884px;
+		height: 200px;
+		background: url(images/repeat.png) repeat-y;
+		z-index:2;
+		}
+
+	#copyright {
+	height:40px;
+	padding-right:32px;
+	font-family: Georgia, arial, sans-serif;
+	font-style:italic;
+	font-size: 11px;
+	color: #1f1a18;
+	letter-spacing:0.01em;
+	text-align: right;
+	line-height: 160%;
+	}
+	#copyright a {
+	color: #1f1a18;
+	}
+	#copyright a:hover {
+		color: #757271;
+		}
+		#copycontainer {
+			float:right;
+		}
+		
+#glassleft2 {
+	float:left;
+	width:151px;
+	height:277px;
+	margin-top:185px;
+	z-index:2;
+}
+
+#glassleft {
+	float:left;
+	width:151px;
+	height:277px;
+	margin-top:185px;
+	z-index:2;
+	}
+	#glassposition {
+		position:absolute;
+		width:162px;
+		margin-left:-5px;
+		}
+		#glassframe {
+			padding-top:1px;
+			padding-bottom:2px;
+			width:162px;
+			height:auto;
+			background:url(images/glassmenu.png) top left no-repeat;
+			}
+			#glasscontent2 {
+			width:148px;
+			height: auto;
+			background: url(images/glassmenu2.png) repeat;
+			margin-left: 7px;
+			margin-top:6px;
+			padding-top:2px;
+			padding-bottom:6px;
+			}
+			#glassbottom {
+			width:162px;
+			height:5px;
+			background:url(images/glassmenubottom.png) 0 0 no-repeat;
+			}
+			
+#glassright2{
+	float:right;
+	width:151px;
+	height:277px;
+	margin-top:185px;
+	z-index:2;
+}
+
+#glassright{
+	float:right;
+	width:151px;
+	height:277px;
+	margin-top:185px;
+	z-index:2;
+	}
+	#glasscontent {
+		width:148px;
+		height: auto;
+		min-height:270px;
+		background: url(images/glassmenu2.png) repeat;
+		margin-left: 7px;
+		margin-top:6px;
+		padding-top:2px;
+		padding-bottom:6px;
+		}
+		#friendcontent {
+			width:148px;
+			height: 60px;
+			background: url(images/friendoverlay.png) repeat;
+			}
+
+#smallmenu {
+	height: 18px;
+}
+
+#smallmenu a {
+	font-family: tahoma, arial, serif;
+	font-size: 13px;
+	color:#353333;
+	text-decoration: none;
+}
+
+#smallmenu a:hover {
+	color: #191818;
+	text-decoration: underlined;
+}
+
+.submit {
+	cursor:pointer;
+	background:#999;
+	color:#FFF;
+	border:none;
+	height:19px;
+	width:99px;
+	margin-left:104px;
+	background:url(images/login.png) no-repeat;
+}
+
+.create {
+	cursor:pointer;
+	background:#999;
+	color:#FFF;
+	border:none;
+	height:22px;
+	width:99px;
+	margin-top:10px;
+	background:url(images/create.png) no-repeat;
+}
+
+.activate {
+	cursor:pointer;
+	background:#999;
+	color:#FFF;
+	border:none;
+	height:22px;
+	width:99px;
+	margin-top:10px;
+	margin-right:6px;
+	background:url(images/activate.png) no-repeat;
+}
+
+.savesettings {
+	cursor:pointer;
+	background:#999;
+	color:#FFF;
+	border:none;
+	height:22px;
+	width:99px;
+	background:url(images/savesettings.png) no-repeat;
+}
+
+.savechanges {
+	cursor:pointer;
+	background:#999;
+	color:#FFF;
+	border:none;
+	height:22px;
+	width:99px;
+	background:url(images/savechanges.png) no-repeat;
+}
+
+.changeemail {
+	cursor:pointer;
+	background:#999;
+	color:#FFF;
+	border:none;
+	height:22px;
+	width:99px;
+	background:url(images/changeemail.png) no-repeat;
+}
+
+.gobutton {
+	cursor:pointer;
+	background:#999;
+	color:#FFF;
+	border:none;
+	height:20px;
+	width:39px;
+	margin-left:4px;
+	margin-top:1px;
+	background:url(images/go.png) no-repeat;
+}
+
+.reset {
+	cursor:pointer;
+	background:#999;
+	color:#FFF;
+	border:none;
+	height:22px;
+	width:99px;
+	margin-top:10px;
+	background:url(images/reset.png) no-repeat;
+}
+
+.reset2 {
+	cursor:pointer;
+	background:#999;
+	color:#FFF;
+	border:none;
+	height:22px;
+	width:99px;
+	margin-top:10px;
+	background:url(images/reset2.png) no-repeat;
+}
+
+.sendmail {
+	cursor:pointer;
+	background:#999;
+	color:#FFF;
+	border:none;
+	height:22px;
+	width:99px;
+	background:url(images/sendmail.png) no-repeat;
+}
+
+.continue {
+        margin-top:5px;
+        cursor:pointer;
+	background:#999;
+	color:#FFF;
+	border:none;
+	height:22px;
+	width:99px;
+	background:url(images/continue.png) no-repeat;
+}
+
+.resetmail {
+	cursor:pointer;
+	background:#999;
+	color:#FFF;
+	border:none;
+	height:22px;
+	width:99px;
+	background:url(images/reset.png) no-repeat;
+}
+
+.passwordbutton {
+	cursor:pointer;
+	background:#999;
+	color:#FFF;
+	border:none;
+	height:22px;
+	width:99px;
+	margin-top:10px;
+	margin-right: 6px;
+	background:url(images/password.png) no-repeat;
+}
+
+.pickbutton {
+	cursor:pointer;
+	background:#999;
+	color:#FFF;
+	border:none;
+	height:22px;
+	width:99px;
+	background:url(images/pickbutton.png) no-repeat;
+}
+
+.removetrade {
+	cursor:pointer;
+	background:#999;
+	color:#FFF;
+	border:none;
+	height:22px;
+	width:99px;
+	background:url(images/removetrade.png) no-repeat;
+}
+
+.challenge {
+	cursor:pointer;
+	background:#999;
+	color:#FFF;
+	border:none;
+	height:22px;
+	width:156px;
+	background:url(images/challenge.png) no-repeat;
+}
+
+.depositbutton {
+	cursor:pointer;
+	background:#999;
+	color:#FFF;
+	border:none;
+	height:22px;
+	width:99px;
+	margin-top:5px;
+	background:url(images/deposit.png) no-repeat;
+}
+
+.widrawbutton {
+	cursor:pointer;
+	background:#999;
+	color:#FFF;
+	border:none;
+	height:22px;
+	width:99px;
+	margin-top:5px;
+	background:url(images/widraw.png) no-repeat;
+}
+
+.submitbutton {
+	cursor:pointer;
+	background:#999;
+	color:#FFF;
+	border:none;
+	height:22px;
+	width:99px;
+	margin-top:10px;
+	margin-right: 6px;
+	background:url(images/submit.png) no-repeat;
+}
+
+.createtrade {
+	cursor:pointer;
+	background:#999;
+	color:#FFF;
+	border:none;
+	height:22px;
+	width:99px;
+	background:url(images/trade.png) no-repeat;
+}
+
+.searchtrade {
+	cursor:pointer;
+	background:#999;
+	color:#FFF;
+	border:none;
+	height:22px;
+	width:99px;
+	background:url(images/searchtrade.png) no-repeat;
+}
+
+.offertrade {
+	cursor:pointer;
+	background:#999;
+	color:#FFF;
+	border:none;
+	height:22px;
+	width:99px;
+	background:url(images/offertrade.png) no-repeat;
+}
+
+.makeoffer {
+	cursor:pointer;
+	background:#999;
+	color:#FFF;
+	border:none;
+	height:22px;
+	width:99px;
+	background:url(images/makeoffer.png) no-repeat;
+	margin-top:10px;
+}
+
+.accepttrade {
+	cursor:pointer;
+	background:#999;
+	color:#FFF;
+	border:none;
+	height:22px;
+	width:99px;
+	background:url(images/accepttrade.png) no-repeat;
+	margin-top:10px;
+}
+
+.rejecttrade {
+	cursor:pointer;
+	background:#999;
+	color:#FFF;
+	border:none;
+	height:22px;
+	width:99px;
+	background:url(images/rejecttrade.png) no-repeat;
+	margin-top:10px;
+}
+
+.createtopic {
+	cursor:pointer;
+	background:#999;
+	color:#FFF;
+	border:none;
+	height:22px;
+	width:99px;
+	background:url(images/createtopic.png) no-repeat;
+}
+
+.postmessage {
+	cursor:pointer;
+	background:#999;
+	color:#FFF;
+	border:none;
+	height:22px;
+	width:99px;
+	background:url(images/postmessage.png) no-repeat;
+}
+
+.preview {
+	cursor:pointer;
+	background:#999;
+	color:#FFF;
+	border:none;
+	height:22px;
+	width:99px;
+	background:url(images/preview.png) no-repeat;
+}
+
+#registerinput {
+	background-image:url(images/txtfieldBg2.jpg);
+	background-repeat:repeat-x;
+	border:1px solid #d1c7ac;
+	color:#909090;
+	padding:1px;
+	height:22px;
+	width:205px;
+	margin-top:10px;
+	font-family: tahoma, arial, sans-serif;
+}
+
+#registerinput2 {
+	background-image:url(images/txtfieldBg2.jpg);
+	background-repeat:repeat-x;
+	border:1px solid #d1c7ac;
+	color:#909090;
+	padding:1px;
+	height:22px;
+	width:64px;
+	margin-top:10px;
+	font-family: tahoma, arial, sans-serif;
+}
+
+.registerinputnew {
+	background-image:url(images/txtfieldBg2.jpg);
+	background-repeat:repeat-x;
+	border:1px solid #d1c7ac;
+	color:#909090;
+	padding:1px;
+	height:22px;
+	width:160px;
+	font-family: tahoma, arial, sans-serif;
+}
+
+#bankinput {
+	background-image:url(images/txtfieldBg2.jpg);
+	background-repeat:repeat-x;
+	border:1px solid #d1c7ac;
+	color:#909090;
+	padding:1px;
+	height:22px;
+	width:99px;
+	margin-top:5px;
+	font-family: tahoma, arial, sans-serif;
+}
+
+#topicinput {
+	background-image:url(images/txtfieldBg2.jpg);
+	background-repeat:repeat-x;
+	border:1px solid #d1c7ac;
+	color:#383634;
+	padding:1px;
+	height:20px;
+	width:99px;
+	font-family: tahoma, arial, sans-serif;
+	font-size:11px;
+}
+
+.color {
+	border:1px solid #d1c7ac;
+	color:#383634;
+	padding:1px;
+	height:20px;
+	width:99px;
+	font-family: tahoma, arial, sans-serif;
+	font-size:11px;
+}
+
+#searchinput {
+	background-image:url(images/txtfieldBg2.jpg);
+	background-repeat:repeat-x;
+	border:1px solid #d1c7ac;
+	color:#909090;
+	padding:1px;
+	height:24px;
+	width:120px;
+	margin-top:5px;
+	font-family: tahoma, arial, sans-serif;
+}
+
+#registerfront{
+	width:221px;
+	height:33px;
+	margin-left:1px;
+	background: url(images/register.png) bottom left no-repeat;
+	}
+	#registerfront:hover {
+		background-position: top center;
+	}
+	
+#heal{
+	width:150px;
+	height:30px;
+	margin-left:1px;
+	background: url(images/heal.png) bottom left no-repeat;
+	}
+	#heal:hover {
+		background-position: top center;
+	}
+
+.menu {
+	height:70px;
+	position:absolute;
+	}
+	ul#nav {
+		margin:0;
+		padding:0;
+		list-style: none inside;
+		}
+		ul#nav li {
+			display: inline;
+			}
+			ul#nav li a {
+				display: block;
+				height: 70px;
+				text-indent: -9999px;
+				float: left;
+				margin-left: 25px;
+				}
+				ul#nav li.front  a{
+					width:105px;
+					height:70px;
+					background: url(images/menu/p1.png) top left no-repeat;
+					}
+				ul#nav li.news  a{
+					width:76px;
+					height:70px;
+					background: url(images/menu/p6.png) top left no-repeat;
+					}	
+				ul#nav li.information  a{
+					width:118px;
+					height:70px;
+					background: url(images/menu/p2.png) top left no-repeat;
+					}
+				ul#nav li.games  a{
+					width:79px;
+					height:70px;
+					background: url(images/menu/p7.png) top left no-repeat;
+					}
+				ul#nav li.community  a{
+					width:125px;
+					height:70px;
+					background: url(images/menu/p8.png) top left no-repeat;
+					}
+				ul#nav li.settings  a{
+					width:93px;
+					height:70px;
+					background: url(images/menu/p9.png) top left no-repeat;
+					}
+				ul#nav li.premium  a{
+					width:103px;
+					height:70px;
+					background: url(images/menu/p10.png) top left no-repeat;
+					}
+					ul#nav li a:hover {
+						background-position: bottom center;
+					}
+.usermenu {
+	width:100%;
+	height:60px;
+	position:relative;
+	margin-left:-23px;
+	}
+	ul#usernav {
+		list-style: none inside;
+		}
+		ul#usernav li {
+			display: inline;
+			margin-left:10px;
+			}
+			ul#usernav li a {
+				display: block;
+				height: 60px;
+				text-indent: -9999px;
+				float: left;
+				margin-left:15px;
+				}
+				ul#usernav li.mail  a{
+					width:60px;
+					background: url(images/user_mail.png) bottom center no-repeat;
+					}
+				ul#usernav li.friends  a{
+					width:60px;
+					background: url(images/user_friend.png) bottom center no-repeat;
+					}
+				ul#usernav li.trades  a{
+					width:60px;
+					background: url(images/user_trade.png) bottom center no-repeat;
+					}
+				ul#usernav li.battle  a{
+					width:60px;
+					background: url(images/user_battle.png) bottom center no-repeat;
+					}			
+					ul#usernav li a:hover {
+						background-position: top center;
+					}
+
+.downtown {
+	margin:0px auto;
+	background: url(images/downtown.jpg) 0 0 no-repeat;
+	width:747px;
+	height:690px;
+	}
+	.downtownmargin {
+		padding-top:390px;
+		}
+		.downtowncontent {
+		padding-left:78px;
+		}
+		#downtown_hospital {
+			width:41px;
+			height:41px;
+			background: url(images/downtown/hospital.png) bottom center no-repeat;
+			}
+			#downtown_hospital:hover {
+			background-position: top center;
+			}
+			#downtown_home {
+			width:41px;
+			height:41px;
+			background: url(images/downtown/home.png) bottom center no-repeat;
+			}
+			#downtown_home:hover {
+			background-position: top center;
+			}
+				
+.forumbuttons{
+	width:100%;
+	height:23px;
+	position:relative;
+	}
+	ul#forumbutton {
+		list-style: none inside;
+		margin-left:-25px;
+		}
+		ul#forumbutton li {
+			display: inline;
+			}
+			ul#forumbutton li a {
+				display: block;
+				height: 23px;
+				text-indent: -9999px;
+				float: left;
+				margin-top:2px;
+				}
+				ul#forumbutton li.bold  a{
+					width:30px;
+					background: url(images/forumbold.png) bottom center no-repeat;
+					}
+					ul#forumbutton li.italic  a{
+					width:30px;
+					background: url(images/forumitalic.png) bottom center no-repeat;
+					}
+					ul#forumbutton li.underline  a{
+					width:30px;
+					background: url(images/forumunderline.png) bottom center no-repeat;
+					}
+
+					ul#forumbutton li a:hover {
+						background-position: top center;
+					}
+#fightclub_menu {
+    width:723px;
+    height:48px;
+    margin-left:auto;
+    margin-right:auto;
+}
+div#fightclub_menu .menu_bar {
+    width:723px;
+    height:21px;
+    background: url(images/fightclub/menu_bar.png) 0 0 no-repeat;
+    position:absolute;
+    margin-top:11px;
+    z-index:1;
+}
+div#fightclub_menu .fight {
+    margin-left:13px;
+    float:left;
+    width:123px;
+    height:48px;
+    background: url(images/fightclub/fight.png) top left no-repeat;
+    cursor:pointer;
+    position:relative;
+    z-index:2;
+    }
+    #fightclub_menu .fight:hover {
+        background-position: bottom center;
+    }
+div#fightclub_menu .small {
+    margin-left:7px;
+    margin-top:5px;
+    float:left;
+    width:136px;
+    height:37px;
+    cursor:pointer;
+    position:relative;
+    z-index:2;
+    }
+    div#fightclub_menu .small:hover {
+        background-position: bottom center;
+    }
+    div#fightclub_menu .challenges {
+        background: url(images/fightclub/challenges.png) top left no-repeat;
+    }
+    div#fightclub_menu .scores {
+        background: url(images/fightclub/scores.png) top left no-repeat;
+    }
+    div#fightclub_menu .abilities {
+        background: url(images/fightclub/abilities.png) top left no-repeat;
+    }
+    div#fightclub_menu .stats {
+        background: url(images/fightclub/stats.png) top left no-repeat;
+    }
+#fightclub_main_bg {
+    width:781px;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:35px;
+    padding-top:70px;
+    padding-bottom:80px;
+    background: url(images/fightclub/main_bg.png) 0 0 no-repeat;
+    }
+    div#fightclub_main_bg .large_box {
+        width:242px;
+        height:362px;
+        background: url(images/fightclub/large_box.png) 0 0 no-repeat;
+        }
+        div#fightclub_main_bg .hp_text {
+            float:left;
+            color:#f8f8f8;
+            font-size:15px;
+        }
+        div#fightclub_main_bg .hp_show {
+            float:right;
+            font-size:15px;
+            color:#d15858;
+            text-align:right;
+            
+        }
+        div#fightclub_main_bg .hp_container {
+            width:176px;
+            height:28px;
+            margin-top:2px;
+            margin-left:auto;
+            margin-right:auto;
+            padding-top:1px;
+            background:url(images/fightclub/hp_container.png) 0 0 no-repeat;
+        }
+        div#fightclub_main_bg .square {
+            width:77px;
+            height:61px;
+            background: url(images/fightclub/square.png) 0 0 no-repeat;
+            font-size:24px;
+            text-align:center;
+            color:#f8f8f8;
+            padding-top:12px;
+            margin-top:2px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        
+    div#fightclub_main_bg .mafia_guy {
+        width:164px;
+        height:280px;
+        background: url(images/fightclub/mafia_guy.png) 0 0 no-repeat;
+    }
+    div#fightclub_main_bg .stats {
+        width:85px;
+        height:24px;
+        position:absolute;
+        margin-top:-8px;
+        margin-left:80px;
+        background: url(images/fightclub/text_stats.png) 0 0 no-repeat;
+    }
+    div#fightclub_main_bg .equiptment {
+        width:180px;
+        height:26px;
+        position:absolute;
+        margin-top:-7px;
+        margin-left:31px;
+        background: url(images/fightclub/text_equiptment.png) 0 0 no-repeat;
+    }
+    div#fightclub_main_bg .item {
+        position:absolute;
+        width:70px;
+        height:70px;
+        border:1px solid black;
+        background-color: #f6f6f6;
+    }
+    div#fightclub_main_bg .remove_weapon {
+        position:absolute;
+        margin-left:59px;
+        margin-top:-10px;
+        z-index:3;
+        width:22px;
+        height:25px;
+        background: url(images/fightclub/remove_item.png) top left no-repeat;
+        cursor:pointer;
+        }
+        div#fightclub_main_bg .remove_weapon:hover {
+            background-position: bottom center;
+        }
+    div#fightclub_main_bg .add_weapon {
+       position:absolute;
+       margin-left:59px;
+       margin-top:-10px;
+       z-index:3;
+       width:22px;
+       height:25px;
+       background: url(images/fightclub/add_item.png) top left no-repeat;
+       cursor:pointer;
+       }
+       div#fightclub_main_bg .add_weapon:hover {
+           background-position: bottom center;
+       }
+       
+       div#fightclub_main_bg .square_box {
+           width:270px;
+           height:248px;
+           background: url(images/fightclub/square_box.png) no-repeat;
+           background-position: bottom center;
+           cursor:pointer;
+       }
+       .fightclub_gray_box {
+           width:680px;
+           height:145px;
+           margin-top:40px;
+           margin-left:auto;
+           margin-right:auto;
+           background-color:#c4bfbf;
+           border:1px solid #ebebeb;
+       }
+        .fightclub_continue_big {
+        border:none;
+        outline:0;
+        position:absolute;
+        margin-left:249px;
+        margin-top:-28px;
+        z-index:3;
+        width:182px;
+        height:58px;
+        background: url(images/fightclub/continue_big.png) no-repeat;
+        background-position:bottom center;
+        cursor:pointer;
+        }
+        .fightclub_fight_big {
+        border:none;
+        outline:0;
+        position:absolute;
+        margin-left:485px;
+        margin-top:-35px;
+        z-index:3;
+        width:162px;
+        height:74px;
+        background: url(images/fightclub/fight_big.png) no-repeat;
+        background-position:bottom center;
+        cursor:pointer;
+        }
+        .fightclub_back {
+            outline:0;
+            border:none;
+            position:absolute;
+            margin-left:33px;
+            margin-top:-28px;
+            z-index:3;
+            width:112px;
+            height:52px;
+            background: url(images/fightclub/back.png) no-repeat;
+            background-position:top center;
+            cursor:pointer;
+            }
+            .fightclub_back:hover {
+                background-position:bottom center;
+            }
+        .fight_icon {
+            margin:auto;
+            width:31px;
+            height:29px;
+            background:url(images/fightclub/fight_icon.png) no-repeat;
+            background-position:top center;
+            cursor:pointer;
+            outline:0;
+            }
+            .fight_icon:hover {
+                background-position:bottom center;
+            }
+        tr.borderbottom td {
+            border-bottom:1px solid #2a2727;
+        }
+        tr.bordertop td {
+            border-top:1px solid #939090;
+        }
+
+#menulink {
+	float:left;
+	margin-top:157px;
+	height:80px;
+	margin-left: 7px;
+}
+
+#registerspacer {
+	width:2px;
+	height:430px;
+	background:url(images/registerspacer.png) repeat-y;
+	float:left;
+}
+
+#forumspacer {
+	width:2px;
+	height:435px;
+	background:url(images/registerspacer.png) repeat-y;
+	float:left;
+}
+
+#newsmiddlespacer {
+	width:1px;
+	height:430px;
+	background:url(images/newsmiddlespacer.png) repeat-y;
+	float:left;
+}
+
+#registerspacerauto {
+	width:2px;
+	height:645px;
+	background:url(images/registerspacer.png) repeat-y;
+	float:left;
+}
+
+#registerspacerauto2 {
+	width: 2px;
+	height: 100%;
+	background:url(images/registerspacer.png) repeat-y;
+	float:left;
+}
+
+#registercontainer {
+	width:482px;
+	height:auto;
+	margin:0px auto;
+}
+
+#registercontent {
+	width:436px;
+	float:left;
+	margin:0px 18px 0px 20px;
+}
+
+.italic {
+    font-family:georgia, arial, serif;
+    font-size:14px;
+    font-style:italic;
+    color:#000;
+}
+
+#italicheader {
+	font-family:georgia, arial, serif;
+	font-size:29px;
+	font-style:italic;
+	color:#000;
+}
+
+#italicheadersmall {
+	font-family:georgia, arial, serif;
+	font-size:26px;
+	font-style:italic;
+	color:#000;
+}
+
+#italicgrey {
+	font-family:georgia, arial, serif;
+	font-size:12px;
+	color:#5c5959;
+	font-style:italic;
+}
+
+#italicblack {
+	font-family:georgia, arial, serif;
+	font-size:12px;
+	font-style:italic;
+	color: #000;
+}
+
+#georgiablack {
+	font-family:georgia, arial, serif;
+	font-size:12px;
+	color: #000;
+}
+
+#italicgreybig {
+	font-family:Georgia, arial, serif;
+	font-size:14px;
+	color:#444343;
+	font-style:italic;
+}
+
+#normalblack {
+	font-family:tahoma, arial, serif;
+	font-size:14px;
+	color:#000;
+}
+
+#normalblack2 {
+	font-family:tahoma, arial, serif;
+	font-size:13px;
+	color:#000;
+}
+
+#normalblack2 a{
+	text-decoration: none;
+	font-weight:bold;
+	color:#000;
+}
+
+#normalblack2 a:hover{
+	text-decoration: underline;
+	font-weight:bold;
+	color:#000;
+}
+
+#normalblacksmall {
+	font-family:tahoma, arial, serif;
+	font-size:12px;
+	color:#000;
+}
+
+.mailcontainer {
+	width:700px;
+	font-family:Georgia, arial, serif;
+	font-size:16px;
+	font-style:italic;
+	color:#444343;
+}
+
+.mailcontent {
+	width:700px;
+	font-family:Georgia, arial, serif;
+	font-size:14px;
+	color:#232222;
+	margin-top:3px;
+}
+
+.mailcontent a{
+	text-decoration:none;
+	color: #232222;
+}
+
+.mailcontent a:hover{
+	text-decoration:underline;
+	color: #232222;
+}
+
+#mailinput {
+	background-image:url(images/txtfieldBg2.jpg);
+	background-repeat:repeat-x;
+	border:1px solid #d1c7ac;
+	color:#909090;
+	padding:1px;
+	height:18px;
+	width:150px;
+	font-family: tahoma, arial, sans-serif;
+}
+
+#mailtext{
+	background-image:url(images/txtfieldBg2.jpg);
+	background-repeat:repeat-x;
+	border:1px solid #d1c7ac;
+	color:#909090;
+	font-family: tahoma, arial, sans-serif;
+	font-size:13px;
+	padding:1px;
+	display:block;
+	width:425px;
+	height:150px;
+	overflow:auto;
+}
+
+#markettext{
+	background-image:url(images/txtfieldBg2.jpg);
+	background-repeat:repeat-x;
+	border:1px solid #d1c7ac;
+	color:#909090;
+	font-family: tahoma, arial, sans-serif;
+	font-size:13px;
+	padding:1px;
+	display:block;
+	width:380px;
+	height:60px;
+	overflow:auto;
+}
+
+#fightinput {
+	background-image:url(images/txtfieldBg2.jpg);
+	background-repeat:repeat-x;
+	border:1px solid #d1c7ac;
+	color:#909090;
+	padding:1px;
+	height:18px;
+	width:155px;
+	font-family: tahoma, arial, sans-serif;
+}
+
+#fighttext{
+	background-image:url(images/txtfieldBg2.jpg);
+	background-repeat:repeat-x;
+	border:1px solid #d1c7ac;
+	color:#909090;
+	font-family: tahoma, arial, sans-serif;
+	font-size:13px;
+	padding:1px;
+	display:block;
+	width:288px;
+	height:40px;
+	overflow:auto;
+}
+
+#forummessage{
+	background-image:url(images/txtfieldBg2.jpg);
+	background-repeat:repeat-x;
+	border:1px solid #d1c7ac;
+	color:#383634;
+	font-family: tahoma, arial, sans-serif;
+	font-size:11px;
+	padding:1px;
+	display:block;
+	width:340px;
+	height:170px;
+	overflow:auto;
+}
+
+#pagespacer {
+	height:2px;
+	margin-top:17px;
+	margin-bottom:12px;
+	background: url(images/pagespacer.png) repeat-x;
+	margin-left:20px;
+}
+
+#newsspacer {
+	height:2px;
+	background: url(images/newsspacer.png) repeat-x;
+	margin-left:20px;
+}
+
+#homeboxleft {
+	float:left;
+	width:49%;
+	margin-bottom:7px;
+}
+
+#homeboxright {
+	float:right;
+	width:49%;
+	text-align:right;
+	margin-bottom:7px;
+}
+
+#frontboxleft {
+	float:left;
+	width:49%;
+	margin-bottom:5px;
+	font-weight:bold;
+}
+
+#frontboxright {
+	float:right;
+	width:49%;
+	text-align:right;
+	margin-bottom:5px;
+}
+
+#linkmenu a{
+	text-decoration:none;
+	font-family:Times New Roman, serif;
+	font-style:italic;
+	font-size:14px;
+	
+}
+
+.footsteps {
+	position:absolute;
+	margin-left:63px;
+	margin-top:-7px;
+	width: 620px;
+	height:280px;
+	background: url(images/footsteps.png) 0 0 no-repeat;
+}
+
+#forumheader {
+	font-family:georgia, arial, serif;
+	font-size:10px;
+	font-style:italic;
+	width:180px;
+	height:70px;
+	background:#696767;
+	color:#b8b2b2;
+}
+
+#forumheader:hover {
+	background:#817e7c;
+
+}
+
+a#forumheaderlink {
+	display:block;
+	width:180px;
+	height:70px;
+	text-decoration:none;
+}
+
+#hottopic {
+	width:250px;
+	height:30px;
+	font-family:georgia, arial, serif;
+	font-size:13px;
+	color: #000000;
+}
+
+#hottopic:hover {
+	background:#bcbcbc;
+	color: #535353;
+}
+
+a#hottopiclink {
+	display:block;
+	width:250px;
+	height:30px;
+	text-decoration:none;
+}
+
+#forumpost {
+	width:680px;
+	height:30px;
+	font-family:georgia, arial, serif;
+	font-size:13px;
+	color: #4b4949;
+}
+
+#forumpost:hover {
+	background:#bcbcbc;
+	color: #4b4949;
+}
+
+a#forumpostlink {
+	display:block;
+	width:680px;
+	text-decoration:none;
+	color:#000;
+}
